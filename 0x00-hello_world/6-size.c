@@ -2,11 +2,10 @@
 
 /**
  * main - Entry point of the program
- *
  * Return: Always 0 if successful
  */
 
-int main(void);
+int main(void)
 {
 	    printf("Size of char: %i byte(s)\n", sizeof(char));
 	    printf("Size of int: %i byte(s)\n", sizeof(int));
