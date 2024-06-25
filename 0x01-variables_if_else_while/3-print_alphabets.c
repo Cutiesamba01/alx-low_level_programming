@@ -6,11 +6,16 @@
  * Return: Always return 0
  */
 
-int man(void)
+int main(void)
 
 {
 	char r;
 
-	for (
+	for (r = 'a'; r <= 'z'; r++)
+		putchar(r);
+	for (r = 'A'; r <= 'Z'; r++)
+		putchar(r);
+	putchar('\n');
 
+	return (0);
 }
