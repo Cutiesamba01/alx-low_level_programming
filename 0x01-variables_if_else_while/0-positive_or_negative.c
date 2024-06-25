@@ -18,8 +18,8 @@ int main(void)
 	if (n > 0)
 		printf("%i is positive\n", n);
 	else if (n < 0)
-		printf("%i s negative\n", n);
+		printf("%i is negative\n", n);
 	else
-		printf("%i is neutral\n", n);
+		printf("%i is zero\n", n);
 	return (0);
 }
