@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - entry point
  * code body
  * Return: Always 0 if successful
  */
