@@ -4,7 +4,7 @@
 
 /**
  * print_to_98 - Print all natural numbers to 98
- * @n: greater tahn 98
+ * @n: greater than 98
  *
  * Return: Always 0 if successful
  */
