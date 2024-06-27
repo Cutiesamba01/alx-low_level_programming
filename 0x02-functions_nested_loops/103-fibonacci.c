@@ -21,6 +21,6 @@ int main(void)
 		j += i;
 		i = k;
 	}
-	printf("%ld ", total);
+	printf("%d ", total);
 	return (0);
 }
