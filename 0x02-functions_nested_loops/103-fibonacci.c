@@ -9,18 +9,18 @@
 int main(void)
 
 {
-	long i = 1, j = 1, k = 2, sum = 2;
+	int i = 1, j = 2, total = 0;
+	int k;
 
-	while (k + j < 4000000)
+	while (j < 4000000)
 	{
-		k += j;
-		if (k % 2 == 0)
-		{
-			sum += k;
-		}
-		i = j;
-		j = k;
+		if (j % 2 == 0)
+			totl += j;
+
+		k = j;
+		j += i;
+		i = k;
 	}
-	printf("%ld ", sum);
+	printf("%ld ", total);
 	return (0);
 }
