@@ -31,7 +31,7 @@ int main(void)
 	}
 	else
 	{
-		fprintf([stderr] :, "[Anything]\n(0 chars long)\n");
+		fprintf(stderr, "[Anything]\n(0 chars long)\n");
 	}
 
 	return (0);
