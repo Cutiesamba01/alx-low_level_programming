@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_to_98 - takes 1 integer as param
+ * print_to_98 - Print all natural numbers from n to 98
  * @n: integer param
  *
  * Loops from n to 98 if n < 98
@@ -12,34 +12,29 @@
 void print_to_98(int n)
 
 {
-	int z;
-
 	if (n <= 98)
 	{
-		for (z = n; z <= 98; z++)
+		while (n >= 98)
 		{
-			if (z != 98)
+			printf("%d", n);
+			if (n != 98)
 			{
-				printf("%d\n", z);
+				printf(", ");
 			}
-			else
-			{
-				printf("%d\n", z);
-			}
+			n--;
 		}
 	}
 	else
 	{
-		for (z = n; z >= 98; z--)
+		while (n <= 98)
 		{
-			if (z != 98)
+			printf("%d", n);
+			if (n != 98)
 			{
-				printf("%d\n", z);
+				printf(", ");
 			}
-			else
-			{
-				printf("%d\n", z);
-			}
+			n++;
 		}
 	}
+	printf("\n");
 }
