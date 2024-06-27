@@ -4,6 +4,7 @@
  * times_table - times table function
  * First loop(a): will iterate from 0 to 9
  * Second loop(b): will iterate from 0 to 9
+ * _putchar: to print values
  */
 
 void times_table(void)
@@ -16,7 +17,7 @@ void times_table(void)
 	{
 		for (b = 0; b <= 9; b++)
 		{
-			int prod = b * 1;
+			int prod = a * b;
 
 				if (b == 0)
 				{
