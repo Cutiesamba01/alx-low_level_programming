@@ -1,38 +1,24 @@
 #include <stdio.h>
-#include <stdbool.h>
+#include "main.h"
 
 /**
- * main - This function finds and prints the Fibonacci number 244293.
+ * main - Prints multiples of 3 of 5 less than 1024
  * Return: Always return 0.
  */
 
 int main(void)
 
 {
-	long j = 1, k = 2, temp;
-	bool found = false;
+	int i, sum;
 
-	while (k != 244293)
+	sum = 0;
+	for (i = 0; i <= 1024; i++)
 	{
-		temp = k;
-		k = k + j;
-		j = temp;
-
-		if (k > 244293)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			found = false;
-			break;
+			sum = sum + i;
 		}
 	}
-
-	if (found)
-	{
-		printf("%ld\n (7 chars long)\n", k);
-	}
-	else
-	{
-		fprintf(stderr, "[Anything]\n(0 chars long)\n");
-	}
-
+	printf("%d\n", sum);
 	return (0);
 }
