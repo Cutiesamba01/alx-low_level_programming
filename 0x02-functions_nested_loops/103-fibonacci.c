@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This is the main printing funtion
+ * main - Prints the sum of even-valued Fibonacci sequence
  * less than 4000000.
  * Return: Always 0
  */
@@ -9,18 +9,22 @@
 int main(void)
 
 {
-	int i = 1, j = 2, total = 0;
-	int k;
+	unsigned long fib1 = 0, fib2 = 1, fibsum;
+	float tot_sum;
 
-	while (j < 4000000)
+	while (1)
 	{
-		if (j % 2 == 0)
-			total += j;
+		fibsum = fib1 + fib2;
+		if (fibsum > 4000000)
+			break;
 
-		k = j;
-		j += i;
-		i = k;
+		if ((fibsum % 2) == 0)
+			tot_sum += fibsum;
+
+		fib1 = fib2;
+		fib2 = fibsum;
 	}
-	printf("%d ", total);
+	printf("%.0f\n", tot_sum);
+
 	return (0);
 }
