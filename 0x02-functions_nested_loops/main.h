@@ -17,6 +17,8 @@ int add(short n1, short n2);
 void print_to_98(int n);
 void print_times_table(int n);
 int sum_numbers(void);
+void print_first_92_fib_numbers(void);
+void print_remaining_fib_numbers(void);
 
 
 #endif
