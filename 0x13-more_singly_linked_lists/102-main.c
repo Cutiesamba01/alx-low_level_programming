@@ -1,4 +1,4 @@
-nclude <stdlib.h>
+#include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
@@ -8,6 +8,7 @@ nclude <stdlib.h>
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
     listint_t *head;
